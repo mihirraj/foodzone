@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '27.0.3'
+    defaultConfig {
+        applicationId "com.f22labs.foodzone"
+        minSdkVersion 15
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+ext {
+    supportLibraryVersion = '25.2.0'
+    butterknifeVersion = "8.5.1"
+
+}
+
+
+
+dependencies {
+    implementation "com.jakewharton:butterknife:$butterknifeVersion"
+    implementation 'com.android.support.constraint:constraint-layout:1.1.2'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterknifeVersion"
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation "com.android.support:appcompat-v7:25.4.0"
+    implementation "com.android.support:design:25.4.0"
+    implementation "com.android.support:support-v4:25.4.0"
+    implementation 'com.android.volley:volley:1.1.1'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+}

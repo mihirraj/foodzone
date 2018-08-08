@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:src="@drawable/search" />
+
+        <EditText
+            android:padding="5dp"
+            android:layout_gravity="center_vertical"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search for Restaurant and Dishes" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/location_image"
+            android:layout_width="30dp"
+            android:layout_height="31dp"
+            android:src="@drawable/location" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/location_image"
+            android:id="@+id/your_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your location" />
+
+        <TextView
+            android:padding="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="Change" />
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:padding="5dp"
+        android:layout_width="wrap_content"
+        android:text="Category name"
+        android:layout_height="wrap_content"
+        android:id="@+id/category_name"/>
+
+
+    <ListView
+        android:id="@+id/category_res_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">foodzone</string>
+
+    <array name="tab_name">
+        <item>Home</item>
+        <item>Search</item>
+        <item>Shop</item>
+        <item>Profile</item>
+    </array>
+    <string name="title_activity_signin_signup">SigninSignup</string>
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+
+</resources>
